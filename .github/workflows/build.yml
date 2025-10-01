@@ -40,8 +40,8 @@ jobs:
         with:
           name: zju-connect-windows-amd64
           github-token: ${{ github.token }}
-          repository: Mythologyli/zju-connect
-          run-id: 17314809436
+          repository: GooduckZ/zju-connect
+          run-id: 18168893903
 
       - name: Download and copy files
         env:
