@@ -5,6 +5,8 @@ on:
       branches: [ atrust-test ]
     pull_request:
       branches: [ atrust-test ]
+    workflow_dispatch:
+      branches: [ atrust-test ]
 
 permissions: write-all
 
