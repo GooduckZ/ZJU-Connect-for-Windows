@@ -57,7 +57,12 @@ jobs:
       - name: Build
         run: |
           cmake --build build --target ${{ env.TARGET_NAME }} --config Release --parallel $(nproc)
-
+          
+      - name: Install Inno Setup 6
+        run: |
+          choco install innosetup --version=6.5.4 -y
+          dir "C:\Program Files (x86)\Inno Setup 6"
+          
       - name: Download and copy files
         env:
           VCINSTALLDIR: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC'
