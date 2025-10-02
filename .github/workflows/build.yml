@@ -43,6 +43,11 @@ jobs:
           repository: GooduckZ/zju-connect
           run-id: 18168893903
 
+      - name: Install Inno Setup 6
+        run: |
+          choco install innosetup --version=6.5.4 -y
+          dir "C:\Program Files (x86)\Inno Setup 6"
+
       - name: Download and copy files
         env:
           VCINSTALLDIR: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC'
